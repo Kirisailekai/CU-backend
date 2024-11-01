@@ -20,7 +20,6 @@ public class User {
 
     private String role;
 
-    // Геттеры и сеттеры
     public Long getId() {
         return id;
     }
