@@ -21,7 +21,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestParam String username, @RequestParam String password) {
-        // Логика логина будет обрабатываться Spring Security, поэтому здесь можно оставить пустым
+
         return ResponseEntity.ok("Logged in successfully");
     }
 }
