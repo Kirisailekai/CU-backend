@@ -19,7 +19,6 @@ public class UserService {
     }
 
     public User registerUser(String username, String password) {
-        // Валидация имени пользователя
         if (username == null || username.trim().isEmpty()) {
             throw new IllegalArgumentException("Username cannot be empty");
         }
@@ -27,7 +26,6 @@ public class UserService {
             throw new RuntimeException("Username already exists");
         }
 
-        // Валидация пароля
         if (password == null || password.length() < 6) {
             throw new IllegalArgumentException("Password must be at least 6 characters long");
         }
